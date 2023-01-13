@@ -1,0 +1,42 @@
+
+.desktop{
+    display: none;
+}
+.mobile{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.cardElement{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 50px;
+    gap:10px;
+    position: relative;
+}
+
+.tittle{
+    font-size: 20px;
+    color: rgb(210, 202, 202);
+    position: absolute;
+    margin-top: -30px;
+    padding-left: 10px;
+}
+article{
+    width: 50px;
+    height: 100px;
+}
+
+article img{
+    width: 200px;
+    height: 100px;
+}
+
+@media screen and (min-width: 1200px) {
+   .cardElement{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+   }
+
+}
