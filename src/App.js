@@ -1,13 +1,15 @@
 import NavBar from "./Components/header";
+import Card from "./Components/cards"
+import CardDesktop from "./Components/cardsDesktop";
 import "./Styles/style-header.css"
-import Interactive from "./Components/interactive"
-import Footer from "./Components/footer";
 
 
 function App() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
+    <Card />
+    <CardDesktop />
       <Interactive />
       <Footer />
     </>
