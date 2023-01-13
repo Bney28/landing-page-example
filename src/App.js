@@ -1,5 +1,5 @@
 import NavBar from "./Components/header";
-/* import "./Styles/style-headersass" */
+import "./Styles/style-header.css"
 
 
 function App() {

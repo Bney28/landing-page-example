@@ -8,13 +8,7 @@ const NavBar = () => {
         <>
             <header className="header">
 
-                <section className="Bg">
-                    <div className="Bg__border">
-                        <h1>Inmersive experiences that deliver</h1>
-                    </div>
-                </section>
-
-                <div className="header__logo">
+                <div className="logo">
                     <img src={Logo} alt="logo" />
                 </div>
 
@@ -27,7 +21,18 @@ const NavBar = () => {
                         <li><button>Support</button></li>
                     </ul>
                 </nav>
+            
+                <div className="menu-burguer">
+                    <div className="bar bar-1"></div>
+                    <div className="bar bar-2"></div>
+                    <div className="bar bar-3"></div>
+                </div>
 
+                <section className="Bg">
+                    <div className="border">
+                        <h1 className="text">Inmersive experiences that deliver</h1>
+                    </div>
+                </section>
 
             </header>
 
