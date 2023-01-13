@@ -1,42 +1,42 @@
 const info = [
     {
       id: 1,
-      image: './Imgs/mobile/image-deep-earth.jpg',
+      image: 'https://github.com/Bney28/landing-page-workshop3/blob/main/src/Imgs/mobile/image-deep-earth.jpg?raw=true',
       title: 'Deep earth',
     },
     {
       id: 2,
-      image: './Imgs/mobile/image-night-arcade.jpg',
+      image: 'https://github.com/Bney28/landing-page-workshop3/blob/main/src/Imgs/mobile/image-night-arcade.jpg?raw=true',
       title: 'Night arcade',
     },
     {
       id: 3,
-      image: './Imgs/mobile/image-soccer-team.jpg',
+      image: 'https://github.com/Bney28/landing-page-workshop3/blob/main/src/Imgs/mobile/image-soccer-team.jpg?raw=true',
       title: 'Soccer Team Vr',
     },
     {
       id: 4,
-      image: './Imgs/mobile/image-grid.jpg',
+      image: 'https://github.com/Bney28/landing-page-workshop3/blob/main/src/Imgs/mobile/image-grid.jpg?raw=true',
       title: 'The grid',
     },
     {
       id: 5,
-      image: './Imgs/mobile/image-from-above.jpg',
+      image: 'https://github.com/Bney28/landing-page-workshop3/blob/main/src/Imgs/mobile/image-from-above.jpg?raw=true',
       title: 'From Up above vr',
     },
     {
       id: 6,
-      image: './Imgs/mobile/image-pocket-borealis.jpg',
+      image: 'https://github.com/Bney28/landing-page-workshop3/blob/main/src/Imgs/mobile/image-pocket-borealis.jpg?raw=true',
       title: 'Pocket Borealis',
     },
     {
       id: 7,
-      image: './Imgs/mobile/image-curiosity.jpg',
+      image: 'https://github.com/Bney28/landing-page-workshop3/blob/main/src/Imgs/mobile/image-curiosity.jpg?raw=true',
       title: 'The curiosity',
     },
     {
       id: 8,
-      image: './Imgs/mobile/image-fisheye.jpg',
+      image: 'https://github.com/Bney28/landing-page-workshop3/blob/main/src/Imgs/mobile/image-fisheye.jpg?raw=true',
       title: 'Make it fisheye',
     },
   ]

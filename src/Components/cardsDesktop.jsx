@@ -1,7 +1,7 @@
 import React from "react";
-import info from '../mobile';
+import info from '../desktop';
 
-export default class Card extends React.Component {
+export default class CardDesktop extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -10,7 +10,7 @@ export default class Card extends React.Component {
   }
   render() {
     return (
-      <section className="mobile">
+      <section className="desktop">
         <h2>Our creations</h2>
         <section className="cardElement">
           {this.state.cards.map((card) => {
