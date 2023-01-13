@@ -8,6 +8,11 @@
     --Very-Dark-Gray: hsl(0, 0%, 41%)
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* Header */
 
@@ -17,9 +22,11 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    padding: 10px 20px;
 }
 
-.Bg {
+/* Hero */
+.texto {
     background-image: url("../Imgs/image-hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,14 +34,13 @@
     height: 700px;
 }
 
-
-.border {
+.texto .border {
     display: flex;
     align-items: center;
     height: 700px;
 }
 
-.border h1 {
+.texto .border h1 {
     color: var(--White);
     font-size: 46px;
     border: 2px var(--White) solid;
@@ -43,13 +49,115 @@
     text-transform: uppercase;
 }
 
-ul{
+/* NavBar */
+
+ul {
     list-style-type: none;
 }
 
-button{
+button {
     background-color: transparent;
     font-family: "Alata", sans-serif;
     border: 0;
     color: var(--White);
+}
+
+.menu-burguer {
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar {
+    background-color: var(--White);
+    width: 35px;
+    height: 3px;
+    margin: 0 0 5px;
+}
+
+.header .menu-burguer.close .bar-1 {
+    transform: rotate(40deg);
+}
+
+.header .menu-burguer.close .bar-2 {
+    opacity: 0;
+}
+
+.header .menu-burguer.close .bar-3 {
+    transform: rotate(-40deg);
+    margin-top: -16px;
+}
+
+
+.navBar {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--Black);
+    min-height: 80vh;
+}
+
+.navBar.open {
+    display: block;
+}
+
+.navBar ul {
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.navBar ul li {
+    margin-bottom: 20px;
+}
+
+.navBar ul li button {
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.logo-nav {
+    padding: 20px;
+}
+
+
+@media screen and (min-width: 1200px) {
+    
+    .logo{
+        padding: 40px;
+    }
+
+    .navBar {
+        display: flex;
+        background-color: transparent;
+        justify-content: right;
+        padding-top: 0;
+        padding-right: 30px;
+    }
+    
+    .navBar ul{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    .navBar ul li button{
+        font-size: 26px;
+        text-transform: capitalize;
+    }
+
+    .logo-nav{
+        display: none;
+    }
+
+    .menu-burguer{
+        display: none;
+    }
+
+    .border{
+        padding-left: 30px;
+
+    }
 }
