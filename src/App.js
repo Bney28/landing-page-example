@@ -14,9 +14,9 @@ function App() {
     <>
       <NavBar />
       <Hero />
+      <Interactive />
       <Card />
       <CardDesktop />
-      <Interactive />
       <Footer />
     </>
   );
