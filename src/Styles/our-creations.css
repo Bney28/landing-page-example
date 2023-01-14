@@ -40,18 +40,10 @@
 }
 
 /* CARD */
-.cardMobile{
-    width: 50px;
-    height: 100px;
-}
 
 .cardMobile img{
-    width: 200px;
-    height: 100px;
-}
-.cardDsktop{
-    width: 100vw;
-    height: 100vh;
+    width: 220px;
+    height: 110px;
 }
 
 .cardDesktop img{
@@ -69,6 +61,16 @@
     padding-left: 10px;
 }
 
+.btn{
+    background-color: var(--Black);
+    color: var(--White);
+    border-radius: 3px;
+}
+
+.btn-container{
+    display: flex;
+    left: 50px;
+}
 
 @media screen and (min-width: 500px) {
 /*    .cardDesktop{
