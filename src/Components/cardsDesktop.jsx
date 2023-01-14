@@ -12,12 +12,15 @@ export default class CardDesktop extends React.Component {
     return (
       <section className="desktop">
         <h2>Our creations</h2>
-        <section className="cardElement">
+        <div className="btn-container">
+          <button className="btn">See All</button>
+        </div>
+        <section className="containerCardDesktop">
           {this.state.cards.map((card) => {
             const { id, image, title } = card
             return (
-              <article key={id}>
-                <div className="bakcground">
+              <article className="cardDesktop" key={id}>
+                <div>
                   <img src={image} alt="creations card" />
                 </div>
                 <h3 className="tittle">{title}</h3>
@@ -25,9 +28,6 @@ export default class CardDesktop extends React.Component {
             )
           })}
         </section>
-        <div className="btn-container">
-          <button className="btn">See All</button>
-        </div>
       </section>
     )
   }

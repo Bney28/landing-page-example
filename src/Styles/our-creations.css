@@ -1,42 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%)
+}
 
+/* Gobal container */
 .desktop{
-    display: none;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 .mobile{
     display: flex;
     flex-direction: column;
     padding: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-.cardElement{
+/* CONTAINER CARDS */
+.containerCardMobile{
     display: grid;
     grid-template-columns: auto;
-    padding: 50px;
     gap:10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.containerCardDesktop{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
-.tittle{
-    font-size: 20px;
-    color: rgb(210, 202, 202);
-    position: absolute;
-    margin-top: -30px;
-    padding-left: 10px;
-}
-article{
+/* CARD */
+.cardMobile{
     width: 50px;
     height: 100px;
 }
 
-article img{
+.cardMobile img{
     width: 200px;
     height: 100px;
 }
+.cardDsktop{
+    width: 100vw;
+    height: 100vh;
+}
 
-@media screen and (min-width: 1200px) {
-   .cardElement{
+.cardDesktop img{
+    width: 200px;
+    height: 300px;
+}
+.tittle{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--White);
+    position: absolute;
+    margin-top: -30px;
+    padding-left: 10px;
+}
+
+
+@media screen and (min-width: 500px) {
+/*    .cardDesktop{
     display: grid;
     grid-template-columns: auto auto auto auto;
-   }
+   } */
 
 }
