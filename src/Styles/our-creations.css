@@ -41,11 +41,21 @@
 
 /* CARD */
 
+.cardMobile:hover{
+    transition: .2s ease;
+    opacity: 60%;
+    backface-visibility: hidden;
+}
 .cardMobile img{
     width: 220px;
     height: 110px;
 }
 
+.cardDesktop:hover{
+    transition: .2s ease;
+    opacity: 60%;
+    backface-visibility: hidden;
+}
 .cardDesktop img{
     width: 200px;
     height: 300px;
@@ -68,6 +78,7 @@
 }
 
 .btn-container{
+    padding-top: 10px;
     display: flex;
     left: 50px;
 }
