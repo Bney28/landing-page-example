@@ -9,10 +9,11 @@
 
 
 /* Gobal container */
-.principal{
+.principal {
     display: flex;
     justify-content: center;
 }
+
 .desktop {
     width: 90vw;
     display: flex;
@@ -56,6 +57,10 @@
     opacity: 60%;
     backface-visibility: hidden;
     cursor: pointer;
+
+    .tittle {
+        color: var(--Black);
+    }
 }
 
 .cardMobile img {
@@ -67,8 +72,13 @@
 .cardDesktop:hover {
     transition: .2s ease;
     opacity: 60%;
+    z-index: 0.5;
     backface-visibility: hidden;
     cursor: pointer;
+
+    .tittle {
+        color: var(--Black);
+    }
 }
 
 .cardDesktop img {
@@ -105,23 +115,25 @@
 
 .btn-container {
     display: flex;
-    justify-content:end;
+    justify-content: end;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 @media screen and (min-width: 375px) {
-    .mobile{
+    .mobile {
         display: none;
     }
+
     .containerCardMobile {
         display: none;
     }
 
-    .desktop{
+    .desktop {
         display: block;
     }
+
     .containerCardDesktop {
         display: block;
         display: grid;
