@@ -10,6 +10,7 @@ export default class CardDesktop extends React.Component {
   }
   render() {
     return (
+      <section className="principal">
       <section className="desktop">
         <h2>Our creations</h2>
         <div className="btn-container">
@@ -28,6 +29,7 @@ export default class CardDesktop extends React.Component {
             )
           })}
         </section>
+      </section>
       </section>
     )
   }
